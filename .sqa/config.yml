@@ -1,0 +1,40 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: staging
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/ropensci/rdatacite:
+      repo: https://github.com/ropensci/rdatacite
+environment:
+  JPL_KEEPGOING: true
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/ropensci/rdatacite:
+        commands:
+        - /usr/bin/env sh .sqa/script.nerdy-copper-nightingale.sh
+        container: qc.acc_crabby-crimson-quail
+  QC.Doc:
+    repos:
+      github.com/ropensci/rdatacite:
+        commands:
+        - /usr/bin/env sh .sqa/script.wiggy-platinum-chow.sh
+        container: qc.doc_skinny-cornflower-koala
+      github.com/ropensci/rdatacite__2:
+        commands:
+        - /usr/bin/env sh .sqa/script.hasty-carmine-mammoth.sh
+        container: qc.doc_hilly-amaranth-tiger
+  QC.Lic:
+    repos:
+      github.com/ropensci/rdatacite:
+        commands:
+        - /usr/bin/env sh .sqa/script.squeaky-champagne-wolverine.sh
+        container: qc.lic_shabby-pink-olm
+  QC.Met:
+    repos:
+      github.com/ropensci/rdatacite:
+        commands:
+        - /usr/bin/env sh .sqa/script.zippy-cerulean-squirrel.sh
+        container: qc.met_slimy-dandelion-tzu
+timeout: 600
