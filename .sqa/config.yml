@@ -14,28 +14,28 @@ sqa_criteria:
     repos:
       github.com/ropensci/rdatacite:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-puce-kakapo.sh
-        container: qc.acc_bluesy-russet-gharial
+        - /usr/bin/env sh .sqa/script.whiny-cyan-centipede.sh
+        container: qc.acc_hilly-razzmatazz-falcon
   QC.Doc:
     repos:
       github.com/ropensci/rdatacite:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-flax-quetzal.sh
-        container: qc.doc_craggy-magenta-cuscus
+        - /usr/bin/env sh .sqa/script.geeky-heliotrope-tamarin.sh
+        container: qc.doc_slaphappy-corn-koala
       github.com/ropensci/rdatacite__2:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-amethyst-cheetah.sh
-        container: qc.doc_lumpy-olive-opossum
+        - /usr/bin/env sh .sqa/script.fuzzy-teal-wolverine.sh
+        container: qc.doc_skimpy-cinnabar-flounder
   QC.Lic:
     repos:
       github.com/ropensci/rdatacite:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-scarlet-coral.sh
-        container: qc.lic_smelly-myrtle-sponge
+        - /usr/bin/env sh .sqa/script.hazy-violet-catfish.sh
+        container: qc.lic_lovely-orchid-dogfish
   QC.Met:
     repos:
       github.com/ropensci/rdatacite:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-viridian-vole.sh
-        container: qc.met_muggy-cream-tang
+        - /usr/bin/env sh .sqa/script.gamy-alizarin-chipmunk.sh
+        container: qc.met_flimsy-indigo-quail
 timeout: 600
