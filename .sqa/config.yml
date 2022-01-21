@@ -7,35 +7,28 @@ config:
     github.com/ropensci/rdatacite:
       repo: https://github.com/ropensci/rdatacite
 environment:
-  JPL_DOCKERFORCEBUILD: enabled
-  JPL_KEEPGOING: enabled
+  JPL_KEEPGOING: true
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/ropensci/rdatacite:
+      github.com/ropensci/rdatacite git:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-cream-vulture.sh
-        container: qc.acc_ugly-rust-reindeer
+        - /usr/bin/env sh .sqa/script.lousy-ultramarine-bracke.sh
+        container: qc.acc_flimsy-goldenrod-cheetah
   QC.Doc:
     repos:
-      github.com/ropensci/rdatacite:
+      github.com/ropensci/rdatacite find_readme.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-beige-dachshund.sh
-        container: qc.doc_sunny-apricot-axolotl
-      github.com/ropensci/rdatacite__2:
+        - /usr/bin/env sh .sqa/script.cranky-crimson-dog.sh
+        container: qc.doc_sleepy-aquamarine-dragonfly
+      github.com/ropensci/rdatacite markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-celadon-hare.sh
-        container: qc.doc_wheezy-sepia-whippet
+        - /usr/bin/env sh .sqa/script.wiggy-buff-magpie.sh
+        container: qc.doc_cranky-lime-wrasse
   QC.Lic:
     repos:
-      github.com/ropensci/rdatacite:
+      github.com/ropensci/rdatacite licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-rust-fowl.sh
-        container: qc.lic_baggy-pear-koala
-  QC.Met:
-    repos:
-      github.com/ropensci/rdatacite:
-        commands:
-        - /usr/bin/env sh .sqa/script.hazy-mustard-meerkat.sh
-        container: qc.met_lovely-denim-dalmatian
+        - /usr/bin/env sh .sqa/script.chewy-flax-ray.sh
+        container: qc.lic_gamy-olivine-salamander
 timeout: 600
