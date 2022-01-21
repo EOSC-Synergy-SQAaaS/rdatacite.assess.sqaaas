@@ -7,28 +7,35 @@ config:
     github.com/ropensci/rdatacite:
       repo: https://github.com/ropensci/rdatacite
 environment:
-  JPL_KEEPGOING: true
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/ropensci/rdatacite git:
+      github.com/ropensci/rdatacite:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-ultramarine-bracke.sh
-        container: qc.acc_flimsy-goldenrod-cheetah
+        - /usr/bin/env sh .sqa/script.gloppy-puce-kakapo.sh
+        container: qc.acc_bluesy-russet-gharial
   QC.Doc:
     repos:
-      github.com/ropensci/rdatacite find_readme.py:
+      github.com/ropensci/rdatacite:
         commands:
-        - /usr/bin/env sh .sqa/script.cranky-crimson-dog.sh
-        container: qc.doc_sleepy-aquamarine-dragonfly
-      github.com/ropensci/rdatacite markdownlint:
+        - /usr/bin/env sh .sqa/script.gloppy-flax-quetzal.sh
+        container: qc.doc_craggy-magenta-cuscus
+      github.com/ropensci/rdatacite__2:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-buff-magpie.sh
-        container: qc.doc_cranky-lime-wrasse
+        - /usr/bin/env sh .sqa/script.ready-amethyst-cheetah.sh
+        container: qc.doc_lumpy-olive-opossum
   QC.Lic:
     repos:
-      github.com/ropensci/rdatacite licensee:
+      github.com/ropensci/rdatacite:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-flax-ray.sh
-        container: qc.lic_gamy-olivine-salamander
+        - /usr/bin/env sh .sqa/script.nerdy-scarlet-coral.sh
+        container: qc.lic_smelly-myrtle-sponge
+  QC.Met:
+    repos:
+      github.com/ropensci/rdatacite:
+        commands:
+        - /usr/bin/env sh .sqa/script.ready-viridian-vole.sh
+        container: qc.met_muggy-cream-tang
 timeout: 600
