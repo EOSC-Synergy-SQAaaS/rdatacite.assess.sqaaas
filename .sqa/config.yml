@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: staging
+      branch: feature/filter_tools_by_repo_content
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/ropensci/rdatacite:
       repo: https://github.com/ropensci/rdatacite
@@ -12,30 +12,30 @@ environment:
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/ropensci/rdatacite:
+      github.com/ropensci/rdatacite git:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-cyan-centipede.sh
-        container: qc.acc_hilly-razzmatazz-falcon
+        - /usr/bin/env sh .sqa/script.cozy-heliotrope-fish.sh
+        container: qc.acc_crappy-goldenrod-turtle
   QC.Doc:
     repos:
-      github.com/ropensci/rdatacite:
+      github.com/ropensci/rdatacite find_readme.py:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-heliotrope-tamarin.sh
-        container: qc.doc_slaphappy-corn-koala
-      github.com/ropensci/rdatacite__2:
+        - /usr/bin/env sh .sqa/script.tacky-azure-gerbil.sh
+        container: qc.doc_muggy-peach-dane
+      github.com/ropensci/rdatacite markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-teal-wolverine.sh
-        container: qc.doc_skimpy-cinnabar-flounder
+        - /usr/bin/env sh .sqa/script.shaky-pear-yak.sh
+        container: qc.doc_blurry-burgundy-axolotl
   QC.Lic:
     repos:
-      github.com/ropensci/rdatacite:
+      github.com/ropensci/rdatacite licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-violet-catfish.sh
-        container: qc.lic_lovely-orchid-dogfish
+        - /usr/bin/env sh .sqa/script.homely-celadon-camel.sh
+        container: qc.lic_surly-indigo-deer
   QC.Met:
     repos:
-      github.com/ropensci/rdatacite:
+      github.com/ropensci/rdatacite validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-alizarin-chipmunk.sh
-        container: qc.met_flimsy-indigo-quail
+        - /usr/bin/env sh .sqa/script.shaky-saffron-fly.sh
+        container: qc.met_slimy-brass-starfish
 timeout: 600
