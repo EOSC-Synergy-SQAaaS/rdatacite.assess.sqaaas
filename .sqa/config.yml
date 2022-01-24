@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: feature/filter_tools_by_repo_content
+      branch: staging
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/ropensci/rdatacite:
       repo: https://github.com/ropensci/rdatacite
@@ -14,28 +14,28 @@ sqa_criteria:
     repos:
       github.com/ropensci/rdatacite git:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-heliotrope-fish.sh
-        container: qc.acc_crappy-goldenrod-turtle
+        - /usr/bin/env sh .sqa/script.geeky-taupe-iguana.sh
+        container: qc.acc_tasty-charcoal-tamarin
   QC.Doc:
     repos:
       github.com/ropensci/rdatacite find_readme.py:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-azure-gerbil.sh
-        container: qc.doc_muggy-peach-dane
+        - /usr/bin/env sh .sqa/script.snippy-tangerine-bombay.sh
+        container: qc.doc_hasty-champagne-hedgehog
       github.com/ropensci/rdatacite markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.shaky-pear-yak.sh
-        container: qc.doc_blurry-burgundy-axolotl
+        - /usr/bin/env sh .sqa/script.gloppy-plum-quokka.sh
+        container: qc.doc_flabby-azure-boar
   QC.Lic:
     repos:
       github.com/ropensci/rdatacite licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-celadon-camel.sh
-        container: qc.lic_surly-indigo-deer
+        - /usr/bin/env sh .sqa/script.bumpy-violet-turtle.sh
+        container: qc.lic_clammy-maroon-turtle
   QC.Met:
     repos:
       github.com/ropensci/rdatacite validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.shaky-saffron-fly.sh
-        container: qc.met_slimy-brass-starfish
+        - /usr/bin/env sh .sqa/script.silly-firebrick-tzu.sh
+        container: qc.met_cloudy-aqua-woodlouse
 timeout: 600
