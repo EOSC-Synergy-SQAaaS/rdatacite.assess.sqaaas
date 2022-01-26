@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: feature/collaboration_enabling_files
+      branch: staging
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/ropensci/rdatacite:
       repo: https://github.com/ropensci/rdatacite
@@ -14,28 +14,28 @@ sqa_criteria:
     repos:
       github.com/ropensci/rdatacite git:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-viridian-worm.sh
-        container: qc.acc_hazy-khaki-tamarin
+        - /usr/bin/env sh .sqa/script.randy-apricot-capybara.sh
+        container: qc.acc_blurry-yellow-wombat
   QC.Doc:
     repos:
-      github.com/ropensci/rdatacite find_doc_files.py:
+      github.com/ropensci/rdatacite find_readme.py:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-wisteria-quail.sh
-        container: qc.doc_scaly-lemon-capuchin
+        - /usr/bin/env sh .sqa/script.cheeky-platinum-russel.sh
+        container: qc.doc_blurry-sangria-beetle
       github.com/ropensci/rdatacite markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.flaky-cyan-alligator.sh
-        container: qc.doc_squeaky-bronze-sponge
+        - /usr/bin/env sh .sqa/script.cheeky-champagne-penguin.sh
+        container: qc.doc_wheezy-tangerine-dachshund
   QC.Lic:
     repos:
       github.com/ropensci/rdatacite licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-taupe-tetra.sh
-        container: qc.lic_sloppy-purple-jaguar
+        - /usr/bin/env sh .sqa/script.sloppy-malachite-vulture.sh
+        container: qc.lic_geeky-khaki-guppy
   QC.Met:
     repos:
       github.com/ropensci/rdatacite validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-sangria-kingfisher.sh
-        container: qc.met_whiny-magenta-tang
+        - /usr/bin/env sh .sqa/script.breezy-beige-bulldog.sh
+        container: qc.met_nippy-magnolia-duck
 timeout: 600
