@@ -14,28 +14,28 @@ sqa_criteria:
     repos:
       github.com/ropensci/rdatacite git:
         commands:
-        - /usr/bin/env sh .sqa/script.cranky-cyan-anteater.sh
-        container: qc.acc_skinny-black-corgi
+        - /usr/bin/env sh .sqa/script.shaky-cinnabar-llama.sh
+        container: qc.acc_wimpy-chestnut-chinchilla
   QC.Doc:
     repos:
       github.com/ropensci/rdatacite find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-corn-wolverine.sh
-        container: qc.doc_silly-heliotrope-argentino
+        - /usr/bin/env sh .sqa/script.jumpy-gamboge-shrimp.sh
+        container: qc.doc_smelly-saffron-hound
       github.com/ropensci/rdatacite markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-ecru-turtle.sh
-        container: qc.doc_cozy-silver-indri
+        - /usr/bin/env sh .sqa/script.whiny-celadon-binturong.sh
+        container: qc.doc_ready-burgundy-crocodile
   QC.Lic:
     repos:
       github.com/ropensci/rdatacite licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-flax-panda.sh
-        container: qc.lic_hasty-taupe-dachshund
+        - /usr/bin/env sh .sqa/script.ready-seashell-akita.sh
+        container: qc.lic_frumpy-firebrick-echidna
   QC.Met:
     repos:
       github.com/ropensci/rdatacite validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-zucchini-lionfish.sh
-        container: qc.met_skanky-teal-shrimp
+        - /usr/bin/env sh .sqa/script.lovely-mauve-wolverine.sh
+        container: qc.met_nippy-chestnut-balinese
 timeout: 600
