@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: staging
+      branch: release/1.1.0
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/ropensci/rdatacite:
       repo: https://github.com/ropensci/rdatacite
@@ -14,28 +14,28 @@ sqa_criteria:
     repos:
       github.com/ropensci/rdatacite git:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-ecru-oyster.sh
-        container: qc.acc_homey-green-bombay
+        - /usr/bin/env sh .sqa/script.geeky-taupe-llama.sh
+        container: qc.acc_skimpy-ultramarine-rottweiler
   QC.Doc:
     repos:
       github.com/ropensci/rdatacite find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-flax-penguin.sh
-        container: qc.doc_messy-gold-ladybird
+        - /usr/bin/env sh .sqa/script.gamy-razzmatazz-hyena.sh
+        container: qc.doc_wimpy-platinum-kiwi
       github.com/ropensci/rdatacite markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-white-toucan.sh
-        container: qc.doc_shaggy-blue-barnacle
+        - /usr/bin/env sh .sqa/script.hilly-pear-affenpinscher.sh
+        container: qc.doc_breezy-flax-markhor
   QC.Lic:
     repos:
       github.com/ropensci/rdatacite licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-fuchsia-bandicoot.sh
-        container: qc.lic_clammy-charcoal-olm
+        - /usr/bin/env sh .sqa/script.blurry-apricot-cuttlefish.sh
+        container: qc.lic_lovely-cornflower-civet
   QC.Met:
     repos:
       github.com/ropensci/rdatacite validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-chocolate-malamute.sh
-        container: qc.met_queasy-linen-bordeaux
+        - /usr/bin/env sh .sqa/script.snappy-denim-boar.sh
+        container: qc.met_baggy-cream-whale
 timeout: 600
