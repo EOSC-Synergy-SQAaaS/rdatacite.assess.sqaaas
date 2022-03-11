@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: staging
+      branch: release/1.1.0
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/ropensci/rdatacite:
       repo: https://github.com/ropensci/rdatacite
@@ -14,28 +14,28 @@ sqa_criteria:
     repos:
       github.com/ropensci/rdatacite git:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-maroon-lemur.sh
-        container: qc.acc_chewy-jade-chimpanzee
+        - /usr/bin/env sh .sqa/script.cheeky-linen-zebu.sh
+        container: qc.acc_skanky-white-vole
   QC.Doc:
     repos:
       github.com/ropensci/rdatacite find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-tan-heron.sh
-        container: qc.doc_gamy-dandelion-lion
+        - /usr/bin/env sh .sqa/script.muzzy-magnolia-shrimp.sh
+        container: qc.doc_snappy-firebrick-rottweiler
       github.com/ropensci/rdatacite markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-orange-caterpillar.sh
-        container: qc.doc_ugly-ecru-hummingbird
+        - /usr/bin/env sh .sqa/script.sleazy-cerulean-ibis.sh
+        container: qc.doc_pokey-brown-zebra
   QC.Lic:
     repos:
       github.com/ropensci/rdatacite licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-brown-lemur.sh
-        container: qc.lic_scanty-emerald-iguana
+        - /usr/bin/env sh .sqa/script.goopy-salmon-iguana.sh
+        container: qc.lic_sloppy-platinum-dodo
   QC.Met:
     repos:
       github.com/ropensci/rdatacite validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-cinnamon-neanderthal.sh
-        container: qc.met_gloppy-ultramarine-antelope
+        - /usr/bin/env sh .sqa/script.droopy-apricot-okapi.sh
+        container: qc.met_shaggy-cream-dogfish
 timeout: 600
