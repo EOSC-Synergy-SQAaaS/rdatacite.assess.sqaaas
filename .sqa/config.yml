@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.1.0
+      branch: staging
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/ropensci/rdatacite:
       repo: https://github.com/ropensci/rdatacite
@@ -14,28 +14,28 @@ sqa_criteria:
     repos:
       github.com/ropensci/rdatacite git:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-azure-kangaroo.sh
-        container: qc.acc_gimpy-indigo-crab
+        - /usr/bin/env sh .sqa/script.frumpy-olivine-rattlesnake.sh
+        container: qc.acc_gimpy-vermilion-cichlid
   QC.Doc:
     repos:
       github.com/ropensci/rdatacite find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-wisteria-ray.sh
-        container: qc.doc_slimy-cobalt-caiman
+        - /usr/bin/env sh .sqa/script.jumpy-sapphire-caracal.sh
+        container: qc.doc_silly-olive-bat
       github.com/ropensci/rdatacite markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-viridian-zebra.sh
-        container: qc.doc_gimpy-cerulean-mongoose
+        - /usr/bin/env sh .sqa/script.homely-thistle-rhinoceros.sh
+        container: qc.doc_scaly-cobalt-harrier
   QC.Lic:
     repos:
       github.com/ropensci/rdatacite licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-xanthic-discus.sh
-        container: qc.lic_grumpy-white-cassowary
+        - /usr/bin/env sh .sqa/script.wimpy-alizarin-fox.sh
+        container: qc.lic_randy-plum-caterpillar
   QC.Met:
     repos:
       github.com/ropensci/rdatacite validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-turquoise-woodlouse.sh
-        container: qc.met_woolly-periwinkle-fousek
+        - /usr/bin/env sh .sqa/script.muggy-sangria-earwig.sh
+        container: qc.met_leaky-auburn-schnauzer
 timeout: 600
