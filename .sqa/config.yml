@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: 1.3.0-alpha
+      branch: 1.4.0-alpha
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/ropensci/rdatacite:
       repo: https://github.com/ropensci/rdatacite
@@ -14,28 +14,28 @@ sqa_criteria:
     repos:
       github.com/ropensci/rdatacite git:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-brass-snail.sh
-        container: qc.acc_flaky-cream-duck
+        - /usr/bin/env sh .sqa/script.trippy-burgundy-robin.sh
+        container: qc.acc_sleepy-grey-owl
   QC.Doc:
     repos:
       github.com/ropensci/rdatacite find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-eggplant-molly.sh
-        container: qc.doc_craggy-rust-yak
+        - /usr/bin/env sh .sqa/script.cranky-magnolia-dolphin.sh
+        container: qc.doc_seedy-ochre-cassowary
       github.com/ropensci/rdatacite markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-thistle-argentino.sh
-        container: qc.doc_crabby-tangerine-balinese
+        - /usr/bin/env sh .sqa/script.skinny-auburn-mouse.sh
+        container: qc.doc_paltry-peach-mist
   QC.Lic:
     repos:
       github.com/ropensci/rdatacite licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-goldenrod-hyrax.sh
-        container: qc.lic_craggy-brass-panda
+        - /usr/bin/env sh .sqa/script.crappy-bronze-akita.sh
+        container: qc.lic_bumpy-beige-binturong
   QC.Met:
     repos:
       github.com/ropensci/rdatacite validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-red-wrasse.sh
-        container: qc.met_nerdy-myrtle-neanderthal
+        - /usr/bin/env sh .sqa/script.hasty-maroon-tiger.sh
+        container: qc.met_baggy-tangerine-lionfish
 timeout: 600
