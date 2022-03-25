@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: 1.4.0-alpha
+      branch: release/1.1.0
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/ropensci/rdatacite:
       repo: https://github.com/ropensci/rdatacite
@@ -14,28 +14,28 @@ sqa_criteria:
     repos:
       github.com/ropensci/rdatacite git:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-cardinal-dormouse.sh
-        container: qc.acc_hasty-tangerine-hare
+        - /usr/bin/env sh .sqa/script.nippy-orchid-sheep.sh
+        container: qc.acc_greasy-corn-lobster
   QC.Doc:
     repos:
       github.com/ropensci/rdatacite find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-burgundy-chow.sh
-        container: qc.doc_foggy-brown-koala
+        - /usr/bin/env sh .sqa/script.blurry-taupe-oyster.sh
+        container: qc.doc_ready-apricot-fly
       github.com/ropensci/rdatacite markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-viridian-mammoth.sh
-        container: qc.doc_cozy-grey-cockroach
+        - /usr/bin/env sh .sqa/script.tasty-aquamarine-binturong.sh
+        container: qc.doc_clammy-jade-lobster
   QC.Lic:
     repos:
       github.com/ropensci/rdatacite licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-seashell-bonobo.sh
-        container: qc.lic_slaphappy-vermilion-havanese
+        - /usr/bin/env sh .sqa/script.snappy-smalt-opossum.sh
+        container: qc.lic_trippy-orange-rat
   QC.Met:
     repos:
       github.com/ropensci/rdatacite validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-flax-moose.sh
-        container: qc.met_queasy-orange-yak
+        - /usr/bin/env sh .sqa/script.flimsy-cobalt-coati.sh
+        container: qc.met_sickly-maroon-affenpinscher
 timeout: 600
