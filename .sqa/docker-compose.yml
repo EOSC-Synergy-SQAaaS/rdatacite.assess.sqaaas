@@ -1,5 +1,5 @@
 services:
-  qc.acc_greasy-corn-lobster:
+  qc.acc_lovely-brown-indri:
     command: sleep 6000000
     image: bitnami/git:2.34.1
     volumes:
@@ -7,7 +7,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.doc_clammy-jade-lobster:
+  qc.doc_bluesy-heliotrope-butterfly:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Doc/markdownlint
       dockerfile: Dockerfile
@@ -17,7 +17,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.doc_ready-apricot-fly:
+  qc.doc_clammy-brass-ant:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Doc
       dockerfile: Dockerfile
@@ -27,7 +27,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.lic_trippy-orange-rat:
+  qc.lic_tacky-cerulean-insect:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Lic/licensee
       dockerfile: Dockerfile
@@ -37,7 +37,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.met_sickly-maroon-affenpinscher:
+  qc.met_jumpy-cinnamon-nightingale:
     command: sleep 6000000
     image: alpine:3.15.0
     volumes:

@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.1.0
+      branch: 1.4.0-alpha
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/ropensci/rdatacite:
       repo: https://github.com/ropensci/rdatacite
@@ -14,28 +14,28 @@ sqa_criteria:
     repos:
       github.com/ropensci/rdatacite git:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-orchid-sheep.sh
-        container: qc.acc_greasy-corn-lobster
+        - /usr/bin/env sh .sqa/script.shaky-malachite-bonobo.sh
+        container: qc.acc_lovely-brown-indri
   QC.Doc:
     repos:
       github.com/ropensci/rdatacite find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-taupe-oyster.sh
-        container: qc.doc_ready-apricot-fly
+        - /usr/bin/env sh .sqa/script.squirrely-gold-malamute.sh
+        container: qc.doc_clammy-brass-ant
       github.com/ropensci/rdatacite markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-aquamarine-binturong.sh
-        container: qc.doc_clammy-jade-lobster
+        - /usr/bin/env sh .sqa/script.shaky-indigo-koala.sh
+        container: qc.doc_bluesy-heliotrope-butterfly
   QC.Lic:
     repos:
       github.com/ropensci/rdatacite licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-smalt-opossum.sh
-        container: qc.lic_trippy-orange-rat
+        - /usr/bin/env sh .sqa/script.stuffy-charcoal-deer.sh
+        container: qc.lic_tacky-cerulean-insect
   QC.Met:
     repos:
       github.com/ropensci/rdatacite validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-cobalt-coati.sh
-        container: qc.met_sickly-maroon-affenpinscher
+        - /usr/bin/env sh .sqa/script.dorky-puce-antelope.sh
+        container: qc.met_jumpy-cinnamon-nightingale
 timeout: 600
