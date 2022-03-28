@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.1.0
+      branch: 1.4.0-alpha
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/ropensci/rdatacite:
       repo: https://github.com/ropensci/rdatacite
@@ -14,28 +14,28 @@ sqa_criteria:
     repos:
       github.com/ropensci/rdatacite git:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-wheat-salamander.sh
-        container: qc.acc_stinky-champagne-kangaroo
+        - /usr/bin/env sh .sqa/script.stealthy-charcoal-avocet.sh
+        container: qc.acc_stealthy-sepia-yak
   QC.Doc:
     repos:
       github.com/ropensci/rdatacite find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-magnolia-goat.sh
-        container: qc.doc_dorky-brass-barnacle
+        - /usr/bin/env sh .sqa/script.gimpy-tomato-moose.sh
+        container: qc.doc_skimpy-chestnut-rattlesnake
       github.com/ropensci/rdatacite markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-saffron-koala.sh
-        container: qc.doc_seedy-fuchsia-warthog
+        - /usr/bin/env sh .sqa/script.sunny-copper-fish.sh
+        container: qc.doc_droopy-turquoise-wombat
   QC.Lic:
     repos:
       github.com/ropensci/rdatacite licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-rose-mongrel.sh
-        container: qc.lic_bluesy-chocolate-birman
+        - /usr/bin/env sh .sqa/script.frumpy-purple-eel.sh
+        container: qc.lic_snazzy-periwinkle-mongrel
   QC.Met:
     repos:
       github.com/ropensci/rdatacite validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-magnolia-magpie.sh
-        container: qc.met_slaphappy-olive-cougar
+        - /usr/bin/env sh .sqa/script.gamy-aquamarine-tarsier.sh
+        container: qc.met_woozy-thistle-armadillo
 timeout: 600
